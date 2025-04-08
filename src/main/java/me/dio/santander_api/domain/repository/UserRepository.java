@@ -8,6 +8,6 @@ import me.dio.santander_api.domain.model.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
 	
-	boolean existsByAccountNumber(Long id);
+	boolean existsByAccountNumber(String accountNumber);
 
 }
